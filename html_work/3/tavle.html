@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="D:\work\html_work\css\table.css">
+</head>
+<body>
+  <h1>상품 구성</h1>
+  <img src="image/오렌지.png" alt="나왕">
+  <table>
+    <caption>테이블 이동</caption>
+    <colgroup>
+    <col style="background-color: rgb(235, 235, 235);">
+    <col>
+    <col span="2" style="width: 200px;">
+    <!-- <col style="width: 200px;"> -->
+    </colgroup>
+    <!-- tr=행 지정 th=셀 지정 -->
+     <thead>
+      <!-- thead, tbody는 화면용이 아니라 화면 낭동기나 자바 스크립트에서 읽는용 -->
+    <tr>
+      <th>용도</th>
+      <th>중량</th>
+      <th>개수</th>
+      <th>가격</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr>
+      <td>선물용</td>
+      <td rowspan="2">3kg</td>
+      <!-- rowspan 행 합치기, 합칠 개수 설정 후 td조정 필요  -->
+      <td>11~16과</td>
+      <td>35,000원</td>
+    </tr>
+    <tr>
+      <td>선물용</td>
+      <td colspan="2">11~16과 35,000원</td>
+      <!-- colspan 열 합치기, 합칠 개수 설정 후 td조정 필요 -->
+    </tr>
+    <tr>
+      <td>용도</td>
+      <td>3kg</td>
+      <td>11~16과</td>
+      <td>35,000원</td>
+    </tr>
+    <tr>
+      <td>용도</td>
+      <td>3kg</td>
+      <td>11~16과</td>
+      <td>35,000원</td>
+    </tr>
+  </tbody>
+  </table>
+</body>
+</html>

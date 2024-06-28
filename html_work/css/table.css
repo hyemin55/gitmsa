@@ -1,0 +1,15 @@
+/* 
+선택자
+id 선택자
+class 선택자
+태그선택자 div h
+ */
+
+ table, tr, th, td{
+  border: 1px solid rgb(170, 130, 185);
+  border-collapse: collapse;
+ }
+
+ th, td{
+  padding: 10px;
+ }
