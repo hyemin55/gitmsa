@@ -15,8 +15,9 @@ public class ex07 {
 		System.out.println(a);
 //		순서대로 진행되기 때문에 b값을 더해서 계산해준다.
 		
-		a*=b;
+		a*=b; //a=a*b
 		System.out.println(a);
+		
 		
 		a+=3;
 		System.out.println(a);

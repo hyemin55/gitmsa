@@ -15,6 +15,7 @@ public class ex11 {
 		result = num1%3==0;
 		System.out.println(result);
 		
+		
 		result = num1%2==0;
 		System.out.println(result);
 		

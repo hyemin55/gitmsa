@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table, tr, th, td{
+      border: 1px solid #000;
+    }
+    tr, th{
+      width: 20mm;
+      height: 10mm;
+    }
+    td:last-child{
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>수습 국원 지원 양식</h1>
+  <table>
+    <colgroup>
+      <col style="background-color: rgb(235, 235, 235);">
+      <!-- 첫번째 열 설정 -->
+      <col >
+      <!-- 두번째 열 설정 -->
+      <!-- <col width="150px"> -->
+      <!-- 열지젓해서도 가능하고 마지막 td를 지정해서도 가능하다.
+       td:last-child{width: 200px;} -->
+      <!-- 세번째 열 설정 -->
+      </colgroup>
+      
+    <tr>
+      <th rowspan="3">개인정보</th>
+      <th>이름</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>학과/학번</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>연락처</th>
+      <td></td>
+    </tr>
+    <th>지원 분야</th>
+    <td colspan="2"></td>
+  </table>
+</body>
+
+</html>

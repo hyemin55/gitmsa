@@ -15,7 +15,7 @@ public class ex02 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("숫자입력");
 		
-//		a변수에 숫자 입력 받아 넣는 구문
+//		a변수에 숫자 입력 받아 넣는 문법
 		a = scan.nextInt();
 		System.out.println("a =  "+a);
 
