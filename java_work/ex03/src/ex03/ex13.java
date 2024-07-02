@@ -14,6 +14,10 @@ public class ex13 {
 //		a = scan.nextDouble();
 
 		System.out.println(a);
+		System.out.println(b);
+		
+		int num1 = (int) a;
+		System.out.println(num1);
 		
 		
 	
