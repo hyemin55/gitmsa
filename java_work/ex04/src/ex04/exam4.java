@@ -9,7 +9,6 @@ public class exam4 {
 	public static void main(String[] args) {
 		int F = 100;
 		float C = (float) ((F - 32) / 1.8);
-		int i = 5;
 
 		int a = (int) (C *100);
 		

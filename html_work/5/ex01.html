@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li {
+      list-style: none;
+      height: 50px;
+    }
+
+    label {
+      width: 100px;
+      display: inline-block;
+      /* background-color: bisque; */
+    }
+  </style>
+</head>
+
+<!-- /* block 요소(공간을 가지고 있다.) 대표적으로 p */
+        p{
+            width: 100px;
+            background-color: blue;
+        
+            display: inline;
+        }
+
+        /* inline요소(공간을 가지고 있지 않다.) 대표적으로 span*/
+        span{
+            background-color: red;    
+            
+            width: 100px;
+            
+            /* 공간을 가지도록 만들어준다. */
+            display: inline-block;
+        }
+         -->
+
+<body>
+  <form action="">
+    <h1>예약 정보</h1>
+    <ul>
+      <li>
+        <label for="이름">이 름</label>
+        <input type="text">
+      </li>
+      <li>
+        <label for="전화">전 화</label>
+        <input type="tel">
+      </li>
+      <li>
+        <label for="이메일">이메일</label>
+        <input type="email">
+      </li>
+      <input type="button" value="예약하기">
+    </ul>
+  </form>
+</body>
+
+</html>
