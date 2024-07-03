@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form action="">
+    <fieldset>
+      <legend>로그인</legend>
+
+      <input type="checkbox" name="" id="" checked>
+      <!-- checked 처음부터 체크되어져 있다. -->
+
+      <label for="id">ID</label>
+      <input type="text" name="id" id="id" size="20">
+      <label for="password">PASSWORD</label>
+      <input type="password" name="password" id="qwer">
+
+      <label for="Tel">Tel</label>
+      <input type="Tel" name="Tel" id="Tel">
+
+      <label for="email">email</label>
+      <input type="email" name="email" id="email" required>
+
+      <button type="button" id="btn">속성바꾸기</button>
+      <button>전송</button>
+    </fieldset>
+  </form>
+</body>
+</html>
+<script>
+  // [addEventListener]는 click 이벤트를 실행
+  document.getElementById('btn'). addEventListener('click',()=>{
+    document.getElementById('qwer'). setAttribute('type','text');
+  })
+</script>
+
+<!-- alert('a'); 
+ 경고창 넣기-->
