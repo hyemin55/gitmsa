@@ -7,14 +7,14 @@
   <title>Document</title>
   <style>
     .line {
-      width: 60%;
+      width: 100%;
       height: 1px;
       background-color: black;
       margin: 40px 0;
     }
 
     textarea {
-      width: 50%;
+      width: 100%;
       height: 50pt;
     }
 
@@ -22,10 +22,21 @@
       list-style: none;
       ;
     }
+    form{
+      line-height: normal;
+      margin: auto;
+    }
+    .box{
+      border: 1px #000 solid;
+      padding: 30px;
+      width: 70%;
+    }
   </style>
 </head>
 
 <body>
+<div class="box">
+
   <form>
     <h1>프런트엔드 개발자 지원서</h1>
     <p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
@@ -60,6 +71,8 @@
     <input type="button" value="접수하기">
     <input type="button" value="다시 쓰기">
   </form>
+
+</div>
 </body>
 
 </html>

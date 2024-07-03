@@ -14,6 +14,11 @@ public class exam1 {
 		int numOfBucket = (numOfApples / sizeOfBucket);
 		int a = numOfApples % sizeOfBucket;
 
+//		문제풀이
+//		System.out.println((numOfBucket % sizeOfBucket > 0 ? 1 : 0));
+//		int numOfBucket = numOfApples / sizeOfBucket + (numOfApples % sizeOfBucket > 0 ? 1 : 0);
+//		System.out.println("필요한 바구니의 수 = " + sizeOfBucket );
+		
 		int result = a > 0 ? (numOfBucket + 1) : numOfBucket;
 		System.out.println("필요한 바구니의 수 = " + result);
 	}

@@ -7,7 +7,14 @@ public class exam2 {
 	 */
 	
 	public static void main(String[] args) {
-		int num = 10;
+		int num = -10;
+		
+//		문제풀이
+//		Scanner scan = new Scanner(System.in);
+//		int num = scan.nextInt();
+//		System.out.println("num = "+num);
+//		System.out.println(num > 0 ? " 양수입니다." : num == 0입니다. ? " 0" : " 음수입니다.");
+//		
 		
 		if (num > 0) {
 			System.out.println("양수");

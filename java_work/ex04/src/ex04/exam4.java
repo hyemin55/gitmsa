@@ -16,6 +16,8 @@ public class exam4 {
 		
 		System.out.println("F = " + F);
 		System.out.println("C = " + c);
+//		System.out.println("C = " + Math.round(C));
+//		System.out.println(((int)(C*100))/(double)100);
 		
 	}
 }
