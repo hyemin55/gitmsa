@@ -26,7 +26,8 @@ public class ex07 {
 		System.out.println(a);
 		
 	}
+	
 }
-11/19
-11/26
-12/19
+//11/19
+//11/26
+//12/19
