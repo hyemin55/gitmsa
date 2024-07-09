@@ -21,9 +21,9 @@ public class ex09 {
 		Scanner scan = new Scanner(System.in);
 		int select = scan.nextInt();
 
-		if(select ==1)
+		if (select == 1)
 			doA();
-		else if(select!=2)
+		else if (select != 2)
 			doB();
 	}
 }

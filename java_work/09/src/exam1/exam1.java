@@ -32,18 +32,18 @@ public class exam1 {
     public static String aa() {
         Scanner scan = new Scanner(System.in);
         System.out.println("가위(0) 바위(1) 보(2) 중 선택하세요");
-        int result = scan.nextInt();
 
-        double a = Math.random() * 3;
-        System.out.println((int) a);
+        String result = scan.nextLine();
+
+        int a = (int) (Math.random() * 3);
 
         if (result == a) {
             System.out.println("비겼다");
             return "비겼다";
-        } else if (result > a) {
+        } else if (result.equals(b) {
             System.out.println("이겼다");
             return "이겼다";
-        } else if (result < a) {
+        } else if (result.equals(c)) {
             System.out.println("졌다");
             return "졌다";
         }
@@ -52,4 +52,4 @@ public class exam1 {
     }
 //    public static String a(){
 
-    }
+}
