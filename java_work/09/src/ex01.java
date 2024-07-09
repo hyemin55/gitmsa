@@ -4,7 +4,6 @@
 *
 */
 
-
 class A{
     int num = 10;
     public void doA(){
