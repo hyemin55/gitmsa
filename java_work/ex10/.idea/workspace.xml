@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="451aac6b-b4b1-473b-978f-8ccab0952a2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ex04/ex10/aa/CalSecond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/ex10/aa/ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/ex10/bank/BackAccountMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/ex10/bank/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/ex10/ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/ex10/ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/ex10/ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bank/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ex08/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex08/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex08/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex08/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex08/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08/08.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex08/08.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex08/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/09.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/09.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/src/aa/bb/Fact.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/src/aa/bb/Fact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/src/bank/BackAccountMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/src/bank/BackAccountMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/src/bank/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/src/bank/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/src/ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/src/ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/src/ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/src/ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/src/ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/src/ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/src/ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/src/ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/src/exam1/exam1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/src/exam1/exam1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09/src/연습용.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex09/src/연습용.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2j273RmK03Wkwr3VsU3YNJmthRX" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.exam1.executor": "Run",
+    "Application.exam2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/work/java_work/ex10",
+    "onboarding.tips.debug.path": "D:/work/java_work/ex10/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\java_work\ex10\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.exam1">
+    <configuration name="exam1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam1" />
+      <module name="ex10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exam2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam2" />
+      <module name="ex10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.exam1" />
+        <item itemvalue="Application.exam2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="451aac6b-b4b1-473b-978f-8ccab0952a2c" name="Changes" comment="" />
+      <created>1720573118403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720573118403</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/bank/BankAccountMain.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
