@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- 카테고리 색상 및 위치 지정 방법
-1.
-position abousute relative 
-top right bottom left
-2.
-float left right
-overflow hidden
- -->
-
+<!--  -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- 자식태그에 float 속성을 주면
+   부모태그에 overflow hidden을 줘야한다. -->
   <style>
     .out-div {
-      position: relative;
-      height: 200px;
+      overflow: hidden;
     }
 
     .in-div {
-      position: absolute;
       width: 100px;
       height: 100px;
     }
@@ -32,7 +23,7 @@ overflow hidden
 
     .yellow {
       background-color: yellow;
-      right: 0;
+      float: right;
     }
 
     .green {
@@ -41,8 +32,7 @@ overflow hidden
 
     .red {
       background-color: red;
-      right: 100px;
-      bottom: 50px;
+      float: left;
     }
   </style>
 </head>
