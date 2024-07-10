@@ -15,7 +15,6 @@ public class exam1 {
 
         int a = num1;
         int b = num2;
-        int c = 0;
 
         for (int i = 0; i < 9; i++) {
             a = b - a;
