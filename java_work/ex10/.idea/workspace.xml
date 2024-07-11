@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="451aac6b-b4b1-473b-978f-8ccab0952a2c" name="Changes" comment="240710">
-      <change beforePath="$PROJECT_DIR$/../../html_work/9/ex01.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../html_work/9/ex01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../html_work/9/ex02.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../html_work/9/ex02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ex10/exam1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ex10/exam1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bb/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,38 +40,77 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2j273RmK03Wkwr3VsU3YNJmthRX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.exam1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.exam2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/work/java_work/ex10&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/work/java_work/ex10/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.B$exam5.executor": "Run",
+    "Application.ex02.executor": "Run",
+    "Application.ex03.executor": "Run",
+    "Application.ex04.executor": "Run",
+    "Application.ex05.executor": "Run",
+    "Application.ex06.executor": "Run",
+    "Application.exam1.executor": "Run",
+    "Application.exam2.executor": "Run",
+    "Application.exam3 (1).executor": "Run",
+    "Application.exam3 (2).executor": "Run",
+    "Application.exam3.executor": "Run",
+    "Application.exam4.executor": "Run",
+    "Application.exam5.executor": "Run",
+    "Application.exam6.executor": "Run",
+    "Application.exam7.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/work/java_work/ex10",
+    "onboarding.tips.debug.path": "D:/work/java_work/ex10/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\java_work\ex10\src\bank" />
       <recent name="D:\work\java_work\ex10\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.exam1">
-    <configuration name="exam1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exam1" />
+  <component name="RunManager" selected="Application.B$exam5">
+    <configuration name="B$exam5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B$exam5" />
       <module name="ex10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exam2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exam2" />
+    <configuration name="ex05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ex05" />
+      <module name="ex10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exam5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam5" />
+      <module name="ex10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exam6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam6" />
+      <module name="ex10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exam7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam7" />
       <module name="ex10" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -67,8 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.exam1" />
-        <item itemvalue="Application.exam2" />
+        <item itemvalue="Application.B$exam5" />
+        <item itemvalue="Application.ex05" />
+        <item itemvalue="Application.exam7" />
+        <item itemvalue="Application.exam6" />
+        <item itemvalue="Application.exam5" />
       </list>
     </recent_temporary>
   </component>

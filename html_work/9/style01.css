@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+/* 
+@font-face {
+  font-family: 'gg';
+  src: url('font/강원교육모두\ Bold.ttf');
+} */
+
+* {
+  font-family: "Gaegu","Black Han Sans", '맑은 고딕';
+  /* font-weight: 400; */
+  /* font-style: normal; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .container {
+      width: 960px;
+      min-width: 960px;
+      margin: 0 auto;
+      background-color: #d9d9d9;
+    } */
+
+.header {
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+  display: block;
+  margin: 0.1rem;
+  padding: 0.2rem;
+}
+
+ul {
+  float: right;
+  /*오른쪽 정렬*/
+}
+
+li {
+  list-style: none;
+  /*글머리기호 삭제*/
+  float: left;
+  /*오른쪽 정렬*/
+}
+
+a {
+  color: #000;
+  display: block;
+  margin: 0.8rem 0.3rem;
+  text-decoration: none;
+  /*밑줄제거*/
+  padding: 0.4rem 1rem;
+  /* background-color: aqua; */
+}
+
+.Sign {
+  background-color: #aaa9a9;
+  border-radius: 0.4rem;
+}
+
+.Register {
+  background-color: #747373;
+  border-radius: 0.4rem;
+}
+
+/* .slide{
+  height: 400px;
+  overflow: hidden;
+} */
+.slider>div {
+  height: 400px;
+  overflow: hidden;
+}
+
+.heading>h1,
+h2 {
+  padding-left: 2rem;
+}
+
+.prevnext{
+  display: flex;
+  justify-content: center;
+}
+/* .prevnext{
+  overflow: hidden;
+}
+.prevnext>#slider-prev{
+  float: left;
+}
+.prevnext>#slider-next{
+  float: right;
+} */
+
+.sub-heading{
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-heading > div{
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 200px;
+  background-color: #fffef4;
+}

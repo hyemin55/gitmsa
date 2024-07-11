@@ -5,70 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-
-    * {
-      font-family: "Black Han Sans", '맑은 고딕';
-      font-weight: 400;
-      font-style: normal;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .container {
-      min-width: 960px;
-      margin: 0 auto;
-      background-color: #d9d9d9;
-    }
-
-    .header {
-      overflow: hidden;
-    }
-
-    .logo {
-      float: left;
-      display: block;
-      margin: 0.1rem;
-      padding: 0.2rem;
-    }
-
-    ul {
-      float: right;
-      /*오른쪽 정렬*/
-    }
-
-    li {
-      list-style: none;
-      /*글머리기호 삭제*/
-      float: left;
-      /*오른쪽 정렬*/
-    }
-
-    a {
-      color: #000;
-      display: block;
-      margin: 0.8rem 0.3rem;
-      text-decoration: none;
-      /*밑줄제거*/
-      padding: 0.4rem 1rem;
-      /* background-color: aqua; */
-    }
-
-    .Sign {
-      background-color: #aaa9a9;
-      border-radius: 0.4rem;
-    }
-
-    .Register {
-      background-color: #747373;
-      border-radius: 0.4rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style01.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".slider").bxSlider({
+        auto: true,
+        speed: 300,
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev',
+        nextText: 'Go next →',
+        prevText: '← Go back'
+      });
+    });
+  </script>
 </head>
 
 <body>
+
   <div class="container">
     <div class="header">
       <div>
@@ -76,7 +32,7 @@
       </div>
       <div>
         <ul>
-          <li><a href="#">Pricing</a></li>
+          <li><a href="#">강원교육</a></li>
           <li><a href="#">Solutions</a></li>
           <li><a href="#">Community</a></li>
           <li><a href="#">Resources</a></li>
@@ -85,13 +41,64 @@
         </ul>
       </div>
     </div>
+    <div class="prevnext">
+      <span id="slider-prev"></span>
+      <span id="slider-next"></span>
+    </div>
     <div class="slide" style="background-color: white;">
-      <h1>slide</h1>
+      <div class="slider">
+        <div><img src="cat-7544821_1280.jpg" alt="">I am a slide.</div>
+        <div><img src="cats-8105667_1280.jpg" alt="">I am a slide.</div>
+        <div><img src="ai-generated-8620359_1280.png" alt="">I am another slide.</div>
+        <div><img src="kittens-2273598_1280.jpg" alt="">I am aaa slide.</div>
+        <div><img src="cats-8105667_1280.jpg" alt="">I am bbb slide.</div>
+        <div><img src="ai-generated-8620359_1280.png" alt="">I am ccc slide.</div>
+      </div>
     </div>
     <div class="heading">
-
+      <h1>고양이</h1>
+      <h2>SubHeading</h2>
+      <div class="sub-heading">
+        <div>
+          <h1>홍길동</h1>
+          <p>😘 Love wins all <br>
+            IU
+          </p>
+        </div>
+        <div>
+          <h1>박길동</h1>
+          <p>😘 홀씨 <br>
+            IU
+          </p>
+        </div>
+        <div>
+          <h1>전길동</h1>
+          <p>😘 관객이 될게 <br>
+            IU
+          </p>
+        </div>
+      </div>
+      <div class="sub-heading">
+        <div>
+          <h1>홍길동</h1>
+          <p>😘 Love wins all <br>
+            IU
+          </p>
+        </div>
+        <div>
+          <h1>박길동</h1>
+          <p>😘 홀씨 <br>
+            IU
+          </p>
+        </div>
+        <div>
+          <h1>전길동</h1>
+          <p>😘 관객이 될게 <br>
+            IU
+          </p>
+        </div>
+      </div>
     </div>
-
   </div>
 </body>
 
