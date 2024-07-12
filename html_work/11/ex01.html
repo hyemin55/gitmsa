@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    div{
+      box-sizing: border-box;
+      padding: 20px;
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      box-shadow: 20px 20px 20px 3px #000;
+      
+      border-radius: 10px 50px 10px 50px;
+      margin: 10px;
+    }
+    div:hover{
+      box-shadow: 0px 0px 5px 5px #333;
+      transform: rotate(0deg);
+      animation: aa 2s infinite;
+      /* transform: scale(2); <= 커지게 */
+    }
+    @keyframes aa {
+      0%{
+        box-shadow: 20px 20px 20px 3px #000;
+      }
+      100%{
+        box-shadow: 0px 0px 5px 5px #333;
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+</html>

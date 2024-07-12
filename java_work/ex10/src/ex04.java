@@ -12,7 +12,6 @@ class Box {
     public Box(String conts) {
         this.conts = conts;
     }
-
 }
 
 public class ex04 {
