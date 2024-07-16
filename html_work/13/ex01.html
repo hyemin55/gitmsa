@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      margin: 30px;
+      line-height: 100px;
+      text-transform: uppercase;
+    }
+
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    .container {
+      background-color: #475c5c;
+      width: 1140px;
+      margin: 0 auto;
+      height: 100px;
+    }
+
+    .active {
+      border: 1px solid white;
+    }
+
+    a {
+      border: 1px solid #475c5c;
+    }
+
+    a:hover {
+      border: 1px solid white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <ul>
+      <li><a class="active" href="#" id="menu1">MENU1</a></li>
+      <li><a href="#" id="menu2">ABCDEF</a></li>
+      <li><a href="#" id="menu3">newMenu</a></li>
+      <li><a href="#" id="menu4">SignIn</a></li>
+      <li><a href="#" id="menu5">SignUP</a></li>
+    </ul>
+    <div id="div1">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui in aperiam culpa quia, itaque aspernatur id enim
+        repellat! Alias reprehenderit enim, odit error laudantium iste dolores nesciunt! Doloribus, nemo deserunt.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corrupti labore velit debitis quasi facere
+        ratione earum ad reiciendis libero, id alias totam assumenda molestiae sit rem quisquam autem et.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quo iste totam corrupti ipsa officiis porro,
+        sint voluptas dolores aut cupiditate consequuntur vel numquam tempora tempore. Dolore alias adipisci laboriosam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus labore eveniet aspernatur soluta itaque
+        velit officia? Corporis iusto blanditiis voluptate laboriosam repellendus dicta, delectus velit repellat ipsa
+        similique, et accusamus.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nulla, officiis amet omnis excepturi
+        reiciendis magni maxime suscipit iste sequi sunt. Nisi rem similique blanditiis placeat possimus, assumenda fuga
+        minima?</p>
+    </div>
+    <div id="div2">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui in aperiam culpa quia, itaque aspernatur id enim
+        repellat! Alias reprehenderit enim, odit error laudantium iste dolores nesciunt! Doloribus, nemo deserunt.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corrupti labore velit debitis quasi facere
+        ratione earum ad reiciendis libero, id alias totam assumenda molestiae sit rem quisquam autem et.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quo iste totam corrupti ipsa officiis porro,
+        sint voluptas dolores aut cupiditate consequuntur vel numquam tempora tempore. Dolore alias adipisci laboriosam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus labore eveniet aspernatur soluta itaque
+        velit officia? Corporis iusto blanditiis voluptate laboriosam repellendus dicta, delectus velit repellat ipsa
+        similique, et accusamus.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nulla, officiis amet omnis excepturi
+        reiciendis magni maxime suscipit iste sequi sunt. Nisi rem similique blanditiis placeat possimus, assumenda fuga
+        minima?</p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function () {
+    $('#menu1').mouseenter(function () { $('#div1').fadeIn(); })
+    $('#menu1').mouseleave(function () { $('#div1').fadeIn(); })
+    $('#menu1').click(function () { $('#div2').fadeToggle(); })
+  });
+</script>
