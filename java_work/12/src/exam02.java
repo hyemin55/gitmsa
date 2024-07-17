@@ -19,7 +19,7 @@ public class exam02 {
         float avr = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-//                arr[i] = 열(5), arr[j] = 행(4) 이다.
+//                arr[i] = 4, arr[j] = 5 이다.
                 sum = sum + arr[i][j];
                 avr = arr.length * arr[i].length;
 //                System.out.print(arr.length+"\t");
