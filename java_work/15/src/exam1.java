@@ -16,7 +16,7 @@ class Student {
     int kor;
     int eng;
     int math;
-    int [] c ={kor,eng,math};
+    int[] c = {kor, eng, math};
 
 
     public Student() {
@@ -37,7 +37,7 @@ class Student {
 
         float a = (float) (kor + eng + math) / c.length;
         int b = (int) (a * 100);
-        float average = (float) b/100;
+        float average = (float) b / 100;
         return average;
     }
 }
@@ -46,7 +46,6 @@ public class exam1 {
     public static void main(String[] args) {
 
         Student st[] = new Student[100];
-        for(int i = 0,i<st.length,i++)
 
         Student a = new Student(86, 85, 77);
         Student b = new Student(91, 100, 98);

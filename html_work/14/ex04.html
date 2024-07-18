@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .back {
+      margin: 30px;
+      height: 560px;
+      display: flex;
+      background-image: url(/9/cats-8105667_1280.jpg);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .back::before {
+      content: '';
+      background-image: url(/9/cats-8105667_1280.jpg);
+      background-size: cover;
+      opacity: 0.7;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+    }
+    .container {
+      position: relative;
+    }
+.grad{
+  height: 300px;
+  background: linear-gradient(to right bottom, rgb(255, 211, 229),rgb(35, 89, 143)rgb(255, 211, 229));
+}
+    h1 {
+      color: aliceblue;
+    }
+
+    h2 {
+      font-size: 300pt;
+      background-image:url(/9/cats-8105667_1280.jpg);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      /* background-image: url(/9/cats-8105667_1280.jpg); */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="back">
+    <div class="container">
+      <h1>나는 할 수 있다!</h1>
+    </div>
+  </div>
+  <div class="grad">
+
+  </div>
+  <div>
+    <h2>야너두</h2>
+  </div>
+</body>
+
+</html>
