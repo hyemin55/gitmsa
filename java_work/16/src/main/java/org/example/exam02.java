@@ -13,33 +13,31 @@ public static void addTwoDArr(int[][] arr, int add){
  */
 package org.example;
 
+import java.util.Arrays;
+
 public class exam02 {
 
-    public exam02() {
-        int[] arr = {2, 5, 8, 56, 6, 89, 4, 3, 6, 41};
-        int add = 0;
-        addOneDArr(arr, add);
-    }
-
-    public static void addOneDArr(int[] arr, int add) {
+    public static void addOneDArr(int[] arr, int add) {//2
         for (int i = 0; i < arr.length; i++) {
             arr[i] += add;
-            int j=0;
-            arr[i][j] = new arr[i];
-
         }
+    }
 
-//        public static void addTwoDArr(int[][] arr, int add){
-//            // 이안에 addOneDArr 메소드를 호출한다.
-//        }
-
-
-
-
+    public static void addTwoDArr(int[][] arr, int add) { //1
+        for (int i = 0; i < 2; i++) {
+            exam02.addOneDArr(arr[i], add);
+        }
     }
 
     public static void main(String[] args) {
-        new exam02();
+        int[][] arr = {
+                {2, 5, 8, 56, 6, 89, 4, 3, 6, 41},
+                {10, 1, 8, 89, 15, 4, 56, 0, 89, 44, 25}};
 
+        exam02.addTwoDArr(arr, 10);
+
+        for (int[] e  : arr) {
+            System.out.println(Arrays.toString(e));
+        }
     }
 }

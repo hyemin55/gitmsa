@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+* {
+  font-family: "Gaegu", "Black Han Sans", '맑은 고딕';
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+h1{
+  padding: 20px;
+  text-align: center;
+}
+.container{
+  margin: 0 auto;
+  padding: 2rem;
+  width: 70%;
+  background-color: rgb(241, 194, 194);
+  border-radius: 1.5rem;
+}
+.container ul{
+  width: 95%;
+  margin: 0 auto;
+}
+label{
+  display: inline-block;
+  padding: 10px;
+}
+input{
+  width: 100%;
+  outline: none;
+  height: 1.7rem;
+  font-size: 1.3rem;
+}
+input:focus{
+  border: 1px solid #ff8f8f;
+}
+.btn-div{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+button{
+  margin: 1rem;
+  height: 2rem;
+  width: 8rem;
+  font-size: 1rem;
+}
