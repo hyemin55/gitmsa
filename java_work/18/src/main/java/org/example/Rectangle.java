@@ -22,10 +22,13 @@ public class Rectangle {
         System.out.println("(" + x + "," + y + ")에서 크기가 " + width + "x" + height + "인 사각형");
     }
 
-    boolean contatins(int x, int y, int width, int height) {
-        int xy = (x + width) * (y + height);
-        int xy2 = (this.x + this.width) * (this.y + this.height);
-
-        return true;
+    public boolean contains(Rectangle Rectangle) {
+        if (Rectangle.<Rectangle) {
+            t > r;
+        else{
+                r > t;
+            }
+            return r;
+        }
     }
 }
