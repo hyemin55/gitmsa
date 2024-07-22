@@ -17,9 +17,16 @@ import java.util.Arrays;
 
 public class exam02 {
 
+
+    /*  arr[][] <= 참조변수의 특성으로 main 함수에 있는 arr배열과
+        addOneDArr,addTwoDArr에 있는 arr은 같은 참조변수를 가리키고 있기 때문에
+        add값이 추가된 결과가 main함수에서 출력되는걸 볼 수 있다.
+    */
+
     public static void addOneDArr(int[] arr, int add) {//2
         for (int i = 0; i < arr.length; i++) {
             arr[i] += add;
+
         }
     }
 
@@ -36,7 +43,7 @@ public class exam02 {
 
         exam02.addTwoDArr(arr, 10);
 
-        for (int[] e  : arr) {
+        for (int[] e : arr) {
             System.out.println(Arrays.toString(e));
         }
     }
