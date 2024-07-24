@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println("구매할 수량을 입력해주세요.");
 
             try {

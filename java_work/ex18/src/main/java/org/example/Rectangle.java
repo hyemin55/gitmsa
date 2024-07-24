@@ -30,3 +30,6 @@ public class Rectangle {
         return false;
     }
 }
+        for(int j=0;j<i;j++)
+int a = (int) a[j].studentID
+            if(studentID==a)
