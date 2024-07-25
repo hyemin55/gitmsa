@@ -12,7 +12,7 @@ public class ex03 {
     public static void md1() throws IOException {
 
         Path file = Paths.get("simple.txt");
-        BufferedWriter writer = null;
+//        BufferedWriter writer = null;
 //  IOException 이 발생하기 때문에 try catch 로 해라.
         try (BufferedWriter writer = Files.newBufferedWriter(file)){
 

@@ -11,9 +11,7 @@ public class Sum {
     int h = 3600;
     int total = 0;
 
-
-
-    public int total(int a, int b, int c, int d, int e, int f, int g, int h) {
+    public int total(int summ) {
         total =
                 (this.a * a) + (this.b * b) +
                         (this.c * c) + (this.d * d) +

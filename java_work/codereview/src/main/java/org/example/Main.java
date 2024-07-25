@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -25,15 +26,29 @@ public class Main {
                 int g = scanner.nextInt();
                 System.out.print("블루베리크림치즈 : ");
                 int h = scanner.nextInt();
-                System.out.println("총 수량 : " + (a + b + c + d + e + f + g + h) + "개");
+
+                int summ = a + b + c + d + e + f + g + h;
+                System.out.println("총 수량 : " + summ + "개");
 
                 Sum sum = new Sum();
-                System.out.println("결제금액 : " + sum.total(a, b, c, d, e, f, g, h) + "원");
+                System.out.println("결제금액 : " + sum.total(summ) + "원 입니다.");
+                System.out.println("SAMSONGPAY 결제 부탁드립니다.");
+
+                for (int j = 0; j < summ; j++) {
+                    System.out.print("\uD83C\uDF6E");
+                }
                 break;
-            } catch (Exception in) {
+
+            }
+            catch (InputMismatchException in) {
                 System.out.println("잘못 입력 되었습니다. 숫자를 입력해 주세요.\n");
                 scanner.nextLine();
             }
+            if (i == 2) System.out.println("\n메뉴를 확인하고 다시 주문해 주세요.");
         }
+
     }
 }
+
+
+//주문 중 수정할 수 있게 만들어볼까?
