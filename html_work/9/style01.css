@@ -42,7 +42,7 @@ li {
   list-style: none;
   /*글머리기호 삭제*/
   float: left;
-  /*오른쪽 정렬*/
+  /*왼쪽 정렬*/
 }
 
 a {

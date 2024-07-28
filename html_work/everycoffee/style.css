@@ -1,0 +1,28 @@
+*{
+    font-family: "Pretendard-Light","Black Han Sans", '맑은 고딕';
+    /* font-weight: 400; */
+    /* font-style: normal; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+#category{
+    list-style: none;
+}
+#logo{
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    background-color: aqua;
+}
+ul{
+    float: right;
+}
+li{
+    margin: 10px;
+    padding: 10px;
+    float: right;
+    background-color: aquamarine;
+}
