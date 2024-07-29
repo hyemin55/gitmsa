@@ -22,6 +22,7 @@ public class Order {
                 case ("y"):
                     order();
                     return;
+//                    return은 order메서드를 끝마친다.
                 case ("n"):
                     return;
                 default:
@@ -64,7 +65,7 @@ public class Order {
         }
 
         if (orderCount <= 0) {
-            System.out.println("음료 주문을 취소했습니다.");
+            System.out.println("음료 선택을 취소했습니다.");
             return;
         }
 
