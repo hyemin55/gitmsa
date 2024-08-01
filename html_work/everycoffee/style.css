@@ -78,6 +78,7 @@ section {
     height: 100vh;
     width: 100vw;
     background-size: cover;
+    position: absolute;
 }
 #section_02, #section_04 {
     background-color: #f8f0e5;
@@ -92,4 +93,12 @@ section {
 .main_subtitle{
     font-size: 40px;
     color: black;
+}
+.aaa{
+    width: 50%;
+    height: 20vh;
+    /* background-color: aquamarine; */
+    position: relative;
+    top: 250px;
+    left: 100px;
 }
