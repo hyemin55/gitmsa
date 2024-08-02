@@ -399,17 +399,62 @@ group by emp.DEPTNO;
 -- 240801 ex09 -- 
 -- 9) 평균 급여가 가장 높은 부서의 번호를 출력하세요. --
 select emp.DEPTNO
-from emp
-group by emp.DEPTNO
-having max(emp.SAL) in
-(select avg(emp.SAL)
-from emp
-group by emp.DEPTNO);
-
-select avg(emp.SAL), dept.DEPTNO
 from emp, dept
 where emp.DEPTNO = dept.DEPTNO
-group by DEPTNO;
+group by emp.DEPTNO
+having avg(emp.SAL);
+
 
 -- 240801 ex10 --
--- 10) 세일즈맨(SALESMAN)을 제외하고, 업무별 사원의 급여가 3,000 이상인 각 업무에 대해서, 업무명과 업무별 평균 급여를 출력하세요. 단 평균 급여는 내림차순으로 출력합니다. --
+-- 10) 세일즈맨(SALESMAN)을 제외하고, 업무별 사원의 급여가 3,000 이상인 각 업무에 대해서, 
+-- 업무명과 업무별 평균 급여를 출력하세요. 단 평균 급여는 내림차순으로 출력합니다. --
+select JOB, SAL
+from emp, dept
+where job != 'salesman'
+group by job
+order by sal
+having avg(sal) >= 3000; 
+
+-- 240802 시작-- ================================================
+set @seq:=0;
+
+select (@seq:=@seq+1) '순번', custid, name, phone
+from customer
+where @seq < 3;
+
+select sum(saleprice)
+from orders
+where custid = (select custid from customer where name = '박지성');
+
+-- 각 고객의 평균 주문금액보다 큰 금액의 주문 내역에 대해서 주문번호, 고객번호, 금액을 나타내시오.  --
+select orderid, custid, saleprice
+from orders od1
+where saleprice > (select avg(saleprice) from orders od2 where od1.custid = od2.custid);
+
+select orderid, custid, saleprice
+from orders od1
+where saleprice <= (select avg(saleprice) from orders od2 where od1.custid = od2.custid);
+ 
+ -- max를 사용해서 구해도 된다.
+ select orderid, saleprice
+ from orders
+ where saleprice > all (select saleprice
+ from orders
+ where custid = 3);
+ 
+ --  부속질의 -> 첫 select는 주질의이고 from(select)가 부속질의이다.
+ -- 고객번호가 2이하인 고객의 판매액을 나타내시요(고객이름과 고객별 판매액 출력).
+ -- from에 조건을 건 테이블을 cs라고 이름을 주고 where 조건절에 cs테이블을 기존테이블과 연결해주고 
+ -- cs테이블의 이름을 그룹으로 묶은 뒤 원하는 내용을 추출한다.
+ select cs.name, sum(od.saleprice) 'total'
+ from (select custid, name
+ from customer
+ where custid <= 2) cs,
+ orders od
+ where cs.custid = od.custid
+ group by cs.name;
+ 
+ 
+ 
+ -- 인덱스는 가능하면 중복되지 않는 값(유니크)을 걸어줘야하고 검색속도를 높여줄 수 있는 칼럼을 걸어줘야 효율적이다.
+ -- 한 테이블의 칼럼이 10개인 곳에 5개의 인덱스를 걸면 오히려 검색이 느려진다.

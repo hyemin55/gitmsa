@@ -32,12 +32,12 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    background-color: rgb(218, 192, 163, 0.5);
+    background-color: rgb(218, 192, 163, 0.7);
 }
-
 #logo {
     margin: 0px;
-    padding: 10px;
+    padding: 10px 0 0 10PX;
+    
 }
 
 #category {
@@ -72,7 +72,7 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(img/latte1.png);
+    background-image: url(/img/imagePcFile_202405290925596630.jpg);
 }
 section {
     height: 100vh;
@@ -80,11 +80,14 @@ section {
     background-size: cover;
     position: absolute;
 }
-#section_02, #section_04 {
+#section_02 {
     background-color: #f8f0e5;
 }
 #section_03 {
-    background-image: url(img/latte1.png);
+    background-image: url(/img/imagePcFile_202405290925596630.jpg);
+}
+#section_04 {
+    background-color: #f8f0e5;
 }
 .main_title{
     font-size: 80px;
