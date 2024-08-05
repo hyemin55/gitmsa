@@ -458,3 +458,4 @@ where saleprice <= (select avg(saleprice) from orders od2 where od1.custid = od2
  
  -- 인덱스는 가능하면 중복되지 않는 값(유니크)을 걸어줘야하고 검색속도를 높여줄 수 있는 칼럼을 걸어줘야 효율적이다.
  -- 한 테이블의 칼럼이 10개인 곳에 5개의 인덱스를 걸면 오히려 검색이 느려진다.
+ 

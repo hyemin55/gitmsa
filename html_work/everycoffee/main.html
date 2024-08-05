@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/scrolltrigger.js"></script>
+
     <title>모두의커피 - EVERY COFFEE</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,12 +16,13 @@
 <body style="height: 100%;">
     <!-- 전체묶음 div -->
     <div id="wrapper">
-        <div id="fix_order">
+
+        <section id="fix_order">
             <p>주문하기</p>
-        </div>
+        </section>
         <div class="header">
             <h1 id="logo">
-                <img src="/img/every coffee 로고.png" alt="" style="width: 50%;">
+                <img src="/img/every coffee 로고.png" alt="" style="width: 280px">
             </h1>
             <div id="category">
                 <ul>
@@ -25,14 +31,14 @@
                     <li id="category_li"><a href="">주문하기</a></li>
                     <li id="category_li"><a href="">공지사항</a></li>
                     <li id="category_li"><a href="">마이페이지</a></li>
-                    <li id="category_li"><a href="">장바구니</a></li>
+                    <li id="category_li"><a href="../haein's/ec_basket/basket.html">장바구니</a></li>
                 </ul>
             </div>
             <!-- <div id="container" style="height: 100%; position: relative; touch-action: none; top: 0px;">
             </div> -->
         </div>
 
-        <div class="main_section">
+        <section class="main_section">
             <div class="main_font_1">
                 <H1 class="main_title" style="color: black;">
                     PICK
@@ -55,7 +61,7 @@
                 </P>
                 <Button>자세히 보기</Button>
             </div>
-        </div>
+        </section>
 
         <!-- 제품소개 페이지 연결 -->
         <section id="section_02">
