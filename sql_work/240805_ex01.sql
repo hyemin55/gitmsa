@@ -67,4 +67,28 @@ primary key(c_id, s_id),
  foreign key(p_id) references perform(p_id)
  );
  
+ show databases;
+ use mysql;
+ show tables;
+ desc user;
+ select * from user;
  
+ -- 권한 지정해주기 위한 계정 생성함.
+ create user mining@localhost identified by '12341234';
+ 
+ --  drop용 계정 생성하고 삭제 연습.
+ create user miningtest@localhost identified by '12341234';
+ drop user miningtest@localhost;
+ 
+ -- 권한 부여 함.
+ grant all privileges on madang_univurschool.* to mining@localhost;
+ 
+ -- 권한을 사용할 수 있게 밀어넣음.
+ flush privileges;
+ 
+ -- 보고싶은 호스트의 권한 확인하기.
+ show grants for mining@localhost;
+ 
+ grant select on madang_univurschool.department to mining@localhost;
+ flush privileges;
+ select * from user;

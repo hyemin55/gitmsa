@@ -41,6 +41,7 @@ pj_budget integer not null default 0
 
 -- 릴레이션 테이블 생성 --
 -- 한 교수가 여러 학과에서 근무할 수 있는데, 이때 학과별로 참여백분율이 기록된다.
+-- 학과별 참여백분율 테이블
 create table work_dept(
 w_pct_time integer not null,
 p_ssn varchar(12) not null, 
@@ -53,6 +54,7 @@ foreign key(d_no) references department(d_no)
 -- 과제는 한 사람 이상의 교수(공동연구책임자)에 의해 수행된다.
 -- 과제는 한 교수(연구책임자)에 의해 관리된다.
 -- 중복 방지로 primary key에 과제와 교수를 복합키로 설정한다.
+-- 연구책임자&공동연구자 테이블
 create table work_in(
 pj_pid integer not null,
 p_ssn varchar(12) not null,
@@ -65,6 +67,7 @@ foreign key(p_ssn) references professor(p_ssn)
 
 -- 한 과제는 한 명 이상의 대학원생에 의해 수행된다.
 -- 한 과제에 한 명의 대학원생이 계속 중복되는걸 막기위해 primary key를 생성해 중복을 없애준다.
+-- 대학원생 과제 테이블
 create table work_prog(
 pj_pid integer not null,
 g_ssn varchar(12) not null,
