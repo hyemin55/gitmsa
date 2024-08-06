@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+
+.container{
+  /* border: 2px solid red; */
+  width: 1120px;
+  margin: auto;
+}
+ ul{
+  width: 1000px;
+  background-color: #838383;
+  list-style: none;
+  margin: auto;
+display: flex;
+ }
+
+ li,a {
+  width: 280px;
+  height: auto;
+ }
+
+ ul > a{
+  display: inline-block;
+  position: absolute;
+ }
+
+ 

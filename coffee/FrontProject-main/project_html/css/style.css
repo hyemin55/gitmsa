@@ -1,0 +1,73 @@
+* {
+    font-family: "Pretendard-Light", "Black Han Sans", '맑은 고딕';
+    /* font-weight: 400; */
+    /* font-style: normal; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+#fix_order{
+    width: 60px;
+    height: 170px;
+    right: 15px;
+    top: 15%;
+    position: fixed;
+    writing-mode: vertical-rl;
+    letter-spacing: 7px;
+    padding: 10px;
+    background-color: #102c57;
+    border-radius: 5rem;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgb(218, 192, 163, 0.5);
+    z-index: 999;
+}
+#logo {
+    margin: 0px;
+    padding: 10px;
+}
+#category {
+    /* list-style: none; */
+}
+ul, ol {
+    list-style-type: none;
+}
+ul {
+    margin: 0 20px 0 0;
+    text-shadow: 0px 0px 5px black;
+}
+li {
+    margin: 5px;
+    padding: 20px;
+    float: left;
+    /* background-color: aquamarine; */
+}
+li:hover {
+    background-color: rgb(16, 44, 87);
+    border-radius: 10%;
+}
+.main_section{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/latte1.png);
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/latte1.png);
+}
