@@ -11,3 +11,46 @@ $(document).ready(function () {
         slidesToScroll: 1      
     })
 });
+
+const productSlide = document.querySelector('.drag_slide');
+let isDragging = false;
+let startX;
+let scrollLeft;
+productSlide.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - productSlide.offsetLeft;
+    scrollLeft = productSlide.scrollLeft;
+    productSlide.classList.add('dragging');
+});
+productSlide.addEventListener('mouseleave', () => {
+    isDragging = false;
+    productSlide.classList.remove('dragging');
+});
+productSlide.addEventListener('mouseup', () => {
+    isDragging = false;
+    productSlide.classList.remove('dragging');
+});
+productSlide.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - productSlide.offsetLeft;
+    const walk = (x - startX) * 1; // Adjust the scroll speed
+    productSlide.scrollLeft = scrollLeft - walk;
+});
+// Touch support
+productSlide.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startX = e.touches[0].pageX - productSlide.offsetLeft;
+    scrollLeft = productSlide.scrollLeft;
+});
+
+productSlide.addEventListener('touchend', () => {
+    isDragging = false;
+});
+productSlide.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - productSlide.offsetLeft;
+    const walk = (x - startX) * 1; // Adjust the scroll speed
+    productSlide.scrollLeft = scrollLeft - walk;
+});
