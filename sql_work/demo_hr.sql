@@ -16,7 +16,8 @@ create database hr;
 grant all privileges on hr.* to hr@localhost with grant option;
 commit;
 
-
+select * from mysql.user;
+show grants for hr@localhost;
 
 /* 여기서부터 hr 계정으로 접속 */
 /* MySQL Workbench에서 초기화면에서 +를 눌러 hr connection을 만들어 접속한다. */
