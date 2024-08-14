@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container{
+      width: 600px;
+      height: 600px;
+      border: 1px solid #000;
+      background-color: #eee;
+      display: flex;
+      /* 주 축을 행으로 바꾸고 순서도 바뀐다. 기본은 row라서 reverse를 사용하지 않는다면 안적어줘도 무방하다.*/
+      /* flex-direction: column-reverse; */
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    #container > div{
+      width: 200px;
+      height: 200px;
+      font-size: 4rem;
+      text-align: center;
+    }
+    #container > div:nth-child(1){
+      background-color: rgb(253, 115, 115);
+    }
+    #container > div:nth-child(2){
+      background-color: beige;
+    }
+    #container > div:nth-child(3){
+      background-color: skyblue;
+    }
+    #container > div:nth-child(4){
+      background-color: rgb(135, 235, 185);
+    }
+    #container > div:nth-child(5){
+      background-color: rgb(235, 203, 135);
+    }
+    #container > div:nth-child(6){
+      background-color: rgb(150, 135, 235);
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+</body>
+</html>
