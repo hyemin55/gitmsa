@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrapper{
+      /* width: 600px; */
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px,auto));
+      grid-template-rows: minmax(100px,auto);
+      grid-row-gap: 20px;
+    }
+    .items{
+      padding: 10px;
+      background-color: #eee;
+    }
+    .items:nth-child(odd){
+      background-color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique, sapiente, sequi excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio voluptatum fugiat natus.</div>
+    <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique, sapiente, sequi excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio voluptatum fugiat natus.</div>
+    <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique, sapiente, sequi excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio voluptatum fugiat natus.</div>
+    <div class="items">amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique, sapiente, sequi excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio voluptatum fugiat natus.</div>
+    <div class="items">dolor sit amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique, sapiente, sequi excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio voluptatum fugiat natus.</div>
+    <div class="items">ipsum, dolor sit amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique, sapiente, sequi excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio voluptatum fugiat natus.</div>
+  </div>
+</body>
+</html>

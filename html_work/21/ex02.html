@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrapper{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(3,200px);
+    }
+    /* .items {
+      padding: 10px;
+      background-color: #eee;
+    } */
+  
+    .box1{
+      background-color: beige;
+      grid-column: 1/4;
+    }
+    .box2{
+      background-color: green;
+      grid-column: 2/4;
+    }
+    .box3{
+      grid-column: 2/4;
+      grid-row-start: 2;
+      color: wheat;
+    }
+    .box4{
+      grid-row: 3;
+      grid-column: 3;
+      background-color: burlywood;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="items box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique,
+      sapiente, sequi excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio
+      voluptatum fugiat natus.</div>
+    <div class="items box2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique,
+      sapiente, sequi excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio
+      voluptatum fugiat natus.</div>
+    <div class="items box3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique,
+      sapiente, sequi excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio
+      voluptatum fugiat natus.</div>
+    <div class="items box4">amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique, sapiente, sequi
+      excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio voluptatum fugiat
+      natus.</div>
+    <div class="items">dolor sit amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique, sapiente, sequi
+      excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio voluptatum fugiat
+      natus.</div>
+    <div class="items">ipsum, dolor sit amet consectetur adipisicing elit. Rerum ipsam obcaecati qui similique,
+      sapiente, sequi excepturi, tempora quas illum labore quibusdam accusantium repellendus unde nulla repellat odio
+      voluptatum fugiat natus.</div>
+  </div>
+</body>
+
+</html>
