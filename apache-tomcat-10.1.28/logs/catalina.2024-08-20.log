@@ -1,0 +1,68 @@
+20-Aug-2024 10:50:32.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ì„œë²„ ë²„ì „ ì´ë¦„:    Apache Tomcat/10.1.28
+20-Aug-2024 10:50:32.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server ë¹Œë“œ ì‹œê°:  Aug 2 2024 15:14:43 UTC
+20-Aug-2024 10:50:32.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server ë²„ì „ ë²ˆí˜¸:  10.1.28.0
+20-Aug-2024 10:50:32.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ìš´ì˜ì²´ì œ ì´ë¦„:     Windows 10
+20-Aug-2024 10:50:32.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ìš´ì˜ì²´ì œ ë²„ì „:     10.0
+20-Aug-2024 10:50:32.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ì•„í‚¤í…ì²˜:          amd64
+20-Aug-2024 10:50:32.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ìë°” í™ˆ:           C:\Program Files\Java\jdk-13.0.2
+20-Aug-2024 10:50:32.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ë²„ì „:          13.0.2+8
+20-Aug-2024 10:50:32.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ë²¤ë”:          Oracle Corporation
+20-Aug-2024 10:50:32.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\work\apache-tomcat-10.1.28
+20-Aug-2024 10:50:32.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\work\apache-tomcat-10.1.28
+20-Aug-2024 10:50:32.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ëª…ë ¹ í–‰ ì•„ê·œë¨¼íŠ¸:  -Djava.util.logging.config.file=d:\work\apache-tomcat-10.1.28/conf/logging.properties
+20-Aug-2024 10:50:32.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ëª…ë ¹ í–‰ ì•„ê·œë¨¼íŠ¸:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Aug-2024 10:50:32.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ëª…ë ¹ í–‰ ì•„ê·œë¨¼íŠ¸:  -Djdk.tls.ephemeralDHKeySize=2048
+20-Aug-2024 10:50:32.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ëª…ë ¹ í–‰ ì•„ê·œë¨¼íŠ¸:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Aug-2024 10:50:32.144 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ëª…ë ¹ í–‰ ì•„ê·œë¨¼íŠ¸:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+20-Aug-2024 10:50:32.144 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ëª…ë ¹ í–‰ ì•„ê·œë¨¼íŠ¸:  -Dcatalina.base=d:\work\apache-tomcat-10.1.28
+20-Aug-2024 10:50:32.145 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ëª…ë ¹ í–‰ ì•„ê·œë¨¼íŠ¸:  -Dcatalina.home=d:\work\apache-tomcat-10.1.28
+20-Aug-2024 10:50:32.145 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ëª…ë ¹ í–‰ ì•„ê·œë¨¼íŠ¸:  -Djava.io.tmpdir=d:\work\apache-tomcat-10.1.28/temp
+20-Aug-2024 10:50:32.162 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent í”„ë¡œë•ì…˜ í™˜ê²½ë“¤ì—ì„œ ìµœì ì˜ ì„±ëŠ¥ì„ ì œê³µí•˜ëŠ”, APR ê¸°ë°˜ Apache Tomcat Native ë¼ì´ë¸ŒëŸ¬ë¦¬ê°€, ë‹¤ìŒ java.library.pathì—ì„œ ë°œê²¬ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤: [C:\Program Files\Java\jdk-13.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1.4\bin;;C:\Users\user\.dotnet\tools;C:\Users\user\AppData\Roaming\npm;.]
+20-Aug-2024 10:50:32.547 INFO [main] org.apache.coyote.AbstractProtocol.init í”„ë¡œí† ì½œ í•¸ë“¤ëŸ¬ ["http-nio-8080"]ì„(ë¥¼) ì´ˆê¸°í™”í•©ë‹ˆë‹¤.
+20-Aug-2024 10:50:32.605 INFO [main] org.apache.catalina.startup.Catalina.load [792] ë°€ë¦¬ì´ˆ ë‚´ì— ì„œë²„ê°€ ì´ˆê¸°í™”ë˜ì—ˆìŠµë‹ˆë‹¤.
+20-Aug-2024 10:50:32.700 INFO [main] org.apache.catalina.core.StandardService.startInternal ì„œë¹„ìŠ¤ [Catalina]ì„(ë¥¼) ì‹œì‘í•©ë‹ˆë‹¤.
+20-Aug-2024 10:50:32.700 INFO [main] org.apache.catalina.core.StandardEngine.startInternal ì„œë²„ ì—”ì§„ì„ ì‹œì‘í•©ë‹ˆë‹¤: [Apache Tomcat/10.1.28]
+20-Aug-2024 10:50:32.742 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory ì›¹ ì• í”Œë¦¬ì¼€ì´ì…˜ ë””ë ‰í† ë¦¬ [D:\work\apache-tomcat-10.1.28\webapps\ROOT]ì„(ë¥¼) ë°°ì¹˜í•©ë‹ˆë‹¤.
+20-Aug-2024 10:50:33.266 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars ì ì–´ë„ í•˜ë‚˜ì˜ JARê°€ TLDë“¤ì„ ì°¾ê¸° ìœ„í•´ ìŠ¤ìº”ë˜ì—ˆìœ¼ë‚˜ ì•„ë¬´ ê²ƒë„ ì°¾ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ìŠ¤ìº”í–ˆìœ¼ë‚˜ TLDê°€ ì—†ëŠ” JARë“¤ì˜ ì „ì²´ ëª©ë¡ì„ ë³´ì‹œë ¤ë©´, ë¡œê·¸ ë ˆë²¨ì„ ë””ë²„ê·¸ ë ˆë²¨ë¡œ ì„¤ì •í•˜ì‹­ì‹œì˜¤. ìŠ¤ìº” ê³¼ì •ì—ì„œ ë¶ˆí•„ìš”í•œ JARë“¤ì„ ê±´ë„ˆë›°ë©´, ì‹œìŠ¤í…œ ì‹œì‘ ì‹œê°„ê³¼ JSP ì»´íŒŒì¼ ì‹œê°„ì„ ë‹¨ì¶•ì‹œí‚¬ ìˆ˜ ìˆìŠµë‹ˆë‹¤.
+20-Aug-2024 10:50:33.431 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory ì›¹ ì• í”Œë¦¬ì¼€ì´ì…˜ ë””ë ‰í† ë¦¬ [D:\work\apache-tomcat-10.1.28\webapps\ROOT]ì— ëŒ€í•œ ë°°ì¹˜ê°€ [686] ë°€ë¦¬ì´ˆì— ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.
+20-Aug-2024 10:50:33.441 INFO [main] org.apache.coyote.AbstractProtocol.start í”„ë¡œí† ì½œ í•¸ë“¤ëŸ¬ ["http-nio-8080"]ì„(ë¥¼) ì‹œì‘í•©ë‹ˆë‹¤.
+20-Aug-2024 10:50:33.575 INFO [main] org.apache.catalina.startup.Catalina.start ì„œë²„ê°€ [970] ë°€ë¦¬ì´ˆ ë‚´ì— ì‹œì‘ë˜ì—ˆìŠµë‹ˆë‹¤.
+20-Aug-2024 11:24:23.964 INFO [main] org.apache.catalina.core.StandardServer.await ì…§ë‹¤ìš´ í¬íŠ¸ë¥¼ í†µí•´ ìœ íš¨í•œ ì…§ë‹¤ìš´ ëª…ë ¹ì„ ë°›ì•˜ìŠµë‹ˆë‹¤. ì„œë²„ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì¤‘ì§€ì‹œí‚µë‹ˆë‹¤.
+20-Aug-2024 11:24:23.968 INFO [main] org.apache.coyote.AbstractProtocol.pause í”„ë¡œí† ì½œ í•¸ë“¤ëŸ¬ ["http-nio-8080"]ì„(ë¥¼) ì¼ì‹œ ì •ì§€ ì¤‘
+20-Aug-2024 11:24:24.076 INFO [main] org.apache.catalina.core.StandardService.stopInternal ì„œë¹„ìŠ¤ [Catalina]ì„(ë¥¼) ì¤‘ì§€ì‹œí‚µë‹ˆë‹¤.
+20-Aug-2024 11:24:24.145 INFO [main] org.apache.coyote.AbstractProtocol.stop í”„ë¡œí† ì½œ í•¸ë“¤ëŸ¬ ["http-nio-8080"]ì„(ë¥¼) ì¤‘ì§€ì‹œí‚µë‹ˆë‹¤.
+20-Aug-2024 11:24:24.163 INFO [main] org.apache.coyote.AbstractProtocol.destroy í”„ë¡œí† ì½œ í•¸ë“¤ëŸ¬ ["http-nio-8080"]ì„(ë¥¼) ì†Œë©¸ì‹œí‚µë‹ˆë‹¤.
+20-Aug-2024 12:17:38.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¼­¹ö ¹öÀü ÀÌ¸§:    Apache Tomcat/10.1.28
+20-Aug-2024 12:17:38.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server ºôµå ½Ã°¢:  Aug 2 2024 15:14:43 UTC
+20-Aug-2024 12:17:38.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server ¹öÀü ¹øÈ£:  10.1.28.0
+20-Aug-2024 12:17:38.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¿î¿µÃ¼Á¦ ÀÌ¸§:     Windows 10
+20-Aug-2024 12:17:38.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¿î¿µÃ¼Á¦ ¹öÀü:     10.0
+20-Aug-2024 12:17:38.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¾ÆÅ°ÅØÃ³:          amd64
+20-Aug-2024 12:17:38.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ÀÚ¹Ù È¨:           C:\Program Files\Java\jdk-13.0.2
+20-Aug-2024 12:17:38.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ¹öÀü:          13.0.2+8
+20-Aug-2024 12:17:38.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM º¥´õ:          Oracle Corporation
+20-Aug-2024 12:17:38.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\work\apache-tomcat-10.1.28
+20-Aug-2024 12:17:38.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\work\apache-tomcat-10.1.28
+20-Aug-2024 12:17:38.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¸í·É Çà ¾Æ±Ô¸ÕÆ®:  -Djava.util.logging.config.file=d:\work\apache-tomcat-10.1.28/conf/logging.properties
+20-Aug-2024 12:17:38.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¸í·É Çà ¾Æ±Ô¸ÕÆ®:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Aug-2024 12:17:38.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¸í·É Çà ¾Æ±Ô¸ÕÆ®:  -Djdk.tls.ephemeralDHKeySize=2048
+20-Aug-2024 12:17:38.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¸í·É Çà ¾Æ±Ô¸ÕÆ®:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Aug-2024 12:17:38.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¸í·É Çà ¾Æ±Ô¸ÕÆ®:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+20-Aug-2024 12:17:38.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¸í·É Çà ¾Æ±Ô¸ÕÆ®:  -Dcatalina.base=d:\work\apache-tomcat-10.1.28
+20-Aug-2024 12:17:38.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¸í·É Çà ¾Æ±Ô¸ÕÆ®:  -Dcatalina.home=d:\work\apache-tomcat-10.1.28
+20-Aug-2024 12:17:38.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log ¸í·É Çà ¾Æ±Ô¸ÕÆ®:  -Djava.io.tmpdir=d:\work\apache-tomcat-10.1.28/temp
+20-Aug-2024 12:17:38.249 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent ÇÁ·Î´ö¼Ç È¯°æµé¿¡¼­ ÃÖÀûÀÇ ¼º´ÉÀ» Á¦°øÇÏ´Â, APR ±â¹İ Apache Tomcat Native ¶óÀÌºê·¯¸®°¡, ´ÙÀ½ java.library.path¿¡¼­ ¹ß°ßµÇÁö ¾Ê½À´Ï´Ù: [C:\Program Files\Java\jdk-13.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1.4\bin;;C:\Users\user\.dotnet\tools;C:\Users\user\AppData\Roaming\npm;.]
+20-Aug-2024 12:17:38.630 INFO [main] org.apache.coyote.AbstractProtocol.init ÇÁ·ÎÅäÄİ ÇÚµé·¯ ["http-nio-8080"]À»(¸¦) ÃÊ±âÈ­ÇÕ´Ï´Ù.
+20-Aug-2024 12:17:38.677 INFO [main] org.apache.catalina.startup.Catalina.load [814] ¹Ğ¸®ÃÊ ³»¿¡ ¼­¹ö°¡ ÃÊ±âÈ­µÇ¾ú½À´Ï´Ù.
+20-Aug-2024 12:17:38.749 INFO [main] org.apache.catalina.core.StandardService.startInternal ¼­ºñ½º [Catalina]À»(¸¦) ½ÃÀÛÇÕ´Ï´Ù.
+20-Aug-2024 12:17:38.749 INFO [main] org.apache.catalina.core.StandardEngine.startInternal ¼­¹ö ¿£ÁøÀ» ½ÃÀÛÇÕ´Ï´Ù: [Apache Tomcat/10.1.28]
+20-Aug-2024 12:17:38.772 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory À¥ ¾ÖÇÃ¸®ÄÉÀÌ¼Ç µğ·ºÅä¸® [D:\work\apache-tomcat-10.1.28\webapps\ROOT]À»(¸¦) ¹èÄ¡ÇÕ´Ï´Ù.
+20-Aug-2024 12:17:39.618 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Àû¾îµµ ÇÏ³ªÀÇ JAR°¡ TLDµéÀ» Ã£±â À§ÇØ ½ºÄµµÇ¾úÀ¸³ª ¾Æ¹« °Íµµ Ã£Áö ¸øÇß½À´Ï´Ù. ½ºÄµÇßÀ¸³ª TLD°¡ ¾ø´Â JARµéÀÇ ÀüÃ¼ ¸ñ·ÏÀ» º¸½Ã·Á¸é, ·Î±× ·¹º§À» µğ¹ö±× ·¹º§·Î ¼³Á¤ÇÏ½Ê½Ã¿À. ½ºÄµ °úÁ¤¿¡¼­ ºÒÇÊ¿äÇÑ JARµéÀ» °Ç³Ê¶Ù¸é, ½Ã½ºÅÛ ½ÃÀÛ ½Ã°£°ú JSP ÄÄÆÄÀÏ ½Ã°£À» ´ÜÃà½ÃÅ³ ¼ö ÀÖ½À´Ï´Ù.
+20-Aug-2024 12:17:39.762 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory À¥ ¾ÖÇÃ¸®ÄÉÀÌ¼Ç µğ·ºÅä¸® [D:\work\apache-tomcat-10.1.28\webapps\ROOT]¿¡ ´ëÇÑ ¹èÄ¡°¡ [988] ¹Ğ¸®ÃÊ¿¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.
+20-Aug-2024 12:17:39.775 INFO [main] org.apache.coyote.AbstractProtocol.start ÇÁ·ÎÅäÄİ ÇÚµé·¯ ["http-nio-8080"]À»(¸¦) ½ÃÀÛÇÕ´Ï´Ù.
+20-Aug-2024 12:17:39.908 INFO [main] org.apache.catalina.startup.Catalina.start ¼­¹ö°¡ [1229] ¹Ğ¸®ÃÊ ³»¿¡ ½ÃÀÛµÇ¾ú½À´Ï´Ù.
+20-Aug-2024 15:40:52.242 INFO [main] org.apache.catalina.core.StandardServer.await ¼Ë´Ù¿î Æ÷Æ®¸¦ ÅëÇØ À¯È¿ÇÑ ¼Ë´Ù¿î ¸í·ÉÀ» ¹Ş¾Ò½À´Ï´Ù. ¼­¹ö ÀÎ½ºÅÏ½º¸¦ ÁßÁö½ÃÅµ´Ï´Ù.
+20-Aug-2024 15:40:52.283 INFO [main] org.apache.coyote.AbstractProtocol.pause ÇÁ·ÎÅäÄİ ÇÚµé·¯ ["http-nio-8080"]À»(¸¦) ÀÏ½Ã Á¤Áö Áß
+20-Aug-2024 15:40:52.585 INFO [main] org.apache.catalina.core.StandardService.stopInternal ¼­ºñ½º [Catalina]À»(¸¦) ÁßÁö½ÃÅµ´Ï´Ù.
+20-Aug-2024 15:40:52.786 INFO [main] org.apache.coyote.AbstractProtocol.stop ÇÁ·ÎÅäÄİ ÇÚµé·¯ ["http-nio-8080"]À»(¸¦) ÁßÁö½ÃÅµ´Ï´Ù.
+20-Aug-2024 15:40:52.827 INFO [main] org.apache.coyote.AbstractProtocol.destroy ÇÁ·ÎÅäÄİ ÇÚµé·¯ ["http-nio-8080"]À»(¸¦) ¼Ò¸ê½ÃÅµ´Ï´Ù.
