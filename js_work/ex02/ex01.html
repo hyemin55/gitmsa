@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <script>
+    console.log('111');
+
+    // var let const
+    var now = new Date();
+    var display1 = now.toLocaleDateString();
+    var display2 = now.toLocaleTimeString();
+    document.write("날짜테스트입니다. " + display1 + "<br>");
+    document.write("시간테스트입니다. " + display2);
+    console.log('test');
+
+    // var은 안에 값을 넣으면 보고 알아서 어떤타입인지 결정해준다.
+    var a;
+    console.log(typeof(a));
+    var b = "abcde";
+    console.log(typeof(b));
+    var c = 10;
+    console.log(typeof(c));
+
+    // true false
+    console.log(Boolean(a=1));
+    if(a=10){
+    console.log('실행됩니다.');
+    }
+  </script>
+</head>
+
+<body>
+  <div class="">
+    <h2 class="text-red-500">Heading</h2>
+  </div>
+</body>
+
+</html>

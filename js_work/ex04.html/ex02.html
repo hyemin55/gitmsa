@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .trr{
+      border: 1px solid black;
+    }
+    .trr tr{
+       border: 1px solid black;
+       background-color: antiquewhite;
+      }
+      .trr th{
+        
+        border: 1px solid red;
+      }
+      .trr td{
+      border: 1px solid burlywood;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex flex-col bg-red-200 p-5 space-y-2">
+    <label for="">총 몇명?</label>
+    <input type="text" name="" id="total" class="border border-b-indigo-500 ring-2 focus:outline-none pl-2"
+      placeholder="총 몇명인지 입력하세요.">
+    <label for="">한줄에 몇명?</label>
+    <input type="text" name="" id="colcount" class="border border-indigo-500">
+    <div class="flex justify-center">
+      <button id="submit" class="bg-amber-500 hover:bg-amber-700 p-1 ">확인</button>
+    </div>
+  </div>
+  <div class="flex felx-col items-center">
+    <h1>좌석</h1>
+    <div id="print"></div>
+  </div>
+
+  <div>
+    <table class="trr">
+      <tr>
+        <th>글쎄요</th>
+        <td>글쎄요</td>
+        <td>글쎄요</td>
+        <td>안뇽</td>
+      </tr>
+      <tr>
+        <th>글쎄요</th>
+        <td>글쎄요</td>
+        <td>글쎄요</td>
+        <td>안뇽</td>
+      </tr>
+      <tr>
+        <th>글쎄요</th>
+        <td>글쎄요</td>
+        <td>글쎄요</td>
+        <td>안뇽</td>
+      </tr>
+      <tr>
+        <th>글쎄요</th>
+        <td>글쎄요</td>
+        <td>글쎄요</td>
+        <td>안뇽</td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    var total = document.getElementById('total');
+    var colcount = document.getElementById('colcount');
+    var print = document.getElementById('print');
+
+    const start = "<table class='border border-gray-300'>";
+    const end = '</table>';
+
+    document.getElementById('submit').onclick = () => {
+      if (total.value > 100) {
+        alert('총인원수는 100보다 작아야 합니다.');
+      }
+      if (colcount.value > 10) {
+        alert('한줄에 10명보다 작아야 합니다.');
+      }
+
+      console.log('total.value = ${total.value} colcount.value = ${colcount.value}');
+      // console.log('test' + total.value + colcount.value);
+      const lineNum = total.value / colcount.value;
+      let 행 = "";
+      let num = 1;
+
+      for (var i = 0; i < lineNum; i++) {
+        행 = 행 + '<tr>';
+        for (let j = 0; j < colcount.value; j++) {
+          행 = 행 + `<td class="border border-gray-300 px-2">좌석 ${num}</td>`;
+          행 = 행 + '<td class="border border-gray-300 px-2">좌석' + num + '</td>';
+          if (num == Number(total.value))
+            break;
+          num++;
+        }
+        행 = 행 + '</tr>';
+      }
+      print.innerHTML = `${start}${행}${end}`;
+    }
+  </script>
+</body>
+
+</html>
