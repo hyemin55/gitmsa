@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <body class="flex flex-col items-center min-h-screen bg-gray-100">
+    <button id="btn" class="bg-gradient-to-r 
+      from-pink-300 
+      via-yellow-100
+      to-pink-400 
+      text-white 
+      font-semibold 
+      py-3 px-9 
+      rounded-full 
+      shadow-lg 
+      transform transition 
+      duration-500 
+      hover:scale-105 
+      hover:shadow-xl 
+      focus:outline-none ">
+      예쁜 버튼
+    </button>
+  </body>
+  <div id="print"></div>
+  <script>
+    const btn = document.getElementById('btn');
+    const print = document.getElementById('print');
+    const arr = ["홍길동", "김길동", "이길동", "박길동", "최길동", "윤길동", "오길동"];
+
+    
+    btn.onclick = () => {
+      print.innerHTML = "";
+      const indexArr = [];
+      let tmep = 0;
+      
+      for (let i = 0; i < arr.length; i++) {
+        do {
+          temp = parseInt(Math.random() * 7);
+          console.log(temp);
+        } while (indexArr.indexOf(temp) > -1);
+        indexArr.push(temp);
+      }
+
+      console.log('indexArr'+indexArr);
+
+      for (let i = 0; i < arr.length; i++) {
+        print.innerHTML = print.innerHTML +`
+        <div class="text-xl font-medium text-gray-800 border border-gray-300 p-2">
+          ${arr[indexArr[i]]}
+          </div>
+          `;
+
+        // console.log(element);
+      }
+    }
+  </script>
+
+</body>
+
+</html>
