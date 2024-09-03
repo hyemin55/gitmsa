@@ -26,7 +26,7 @@ public class ex07 {
                     1. select
                     2. insert
                     3. update
-                    4.delete
+                    4. delete
                     """);
             int ra = scanner.nextInt();
 
@@ -34,7 +34,9 @@ public class ex07 {
                 memberRepository.select();
             } else if (ra == 2) {
                 memberRepository.insert();
-            } else {
+            } else if (ra==4){
+                memberRepository.delete();
+            }else {
                 System.out.println("종료됩니다.");
                 break;
             }

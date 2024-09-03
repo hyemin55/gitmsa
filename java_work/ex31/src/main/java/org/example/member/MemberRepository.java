@@ -1,14 +1,40 @@
-package org.example;
+package org.example.member;
 
 import java.sql.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class MemberRepository {
     //        Connection conn = null;
 //        PreparedStatement pstmt = null;
 //        ResultSet rs = null;
+Scanner scan = new Scanner(System.in);
+
+    public Member findByIdx(int idx){
+        try(Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/pmh")){
+            PreparedStatement pstmt = conn.prepareStatement("select * from aa where idx = ?");
+            pstmt.setInt(1,idx);
+            ResultSet rs = pstmt.executeQuery();
+            if(rs.next()){
+//                사용자 있음.
+                return Member.builder()
+                        .idx(rs.getInt("idx"))
+                        .name(rs.getString("name"))
+                        .email(rs.getString("email"))
+                        .build();
+
+            }else{
+//                사용자 없음.
+                return null;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public void select() {
         List<Member> list = new ArrayList<>();
         try (Connection conn =
@@ -66,11 +92,14 @@ public class MemberRepository {
             PreparedStatement pstmt = conn.prepareStatement("""
                         DELETE FROM aa WHERE idx = (?)
                     """);
-
+            int idx = scan.nextInt();
+            pstmt.setInt(1,idx);
+            pstmt.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+}
 
 
 
