@@ -2,6 +2,7 @@ package com.pmh.ex03.user;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDateTime;
 
@@ -9,7 +10,7 @@ import java.time.LocalDateTime;
 @Configuration -> 객체 담는 통 정의
 @Bean -> 객체 지정
 @Component -> 객체 지정
-@ComponentScan -> 패키니 내용 읽어서 객체 주입
+@ComponentScan -> 패키지 내용 읽어서 객체 주입
 @Autowired -> new 예약어 안쓰고 객체 자동 할당
 private final -> @RequiredArgsConstructor -> 객체 자동할당
 @Entity -> 테이블 지정
@@ -21,8 +22,8 @@ private final -> @RequiredArgsConstructor -> 객체 자동할당
 @Entity
 @Table(name = "users")
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor //기본생성자
+@AllArgsConstructor // 모든 변수를 담을 수 있는 생성자
 @ToString
 @Getter
 @Setter
