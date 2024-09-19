@@ -9,6 +9,7 @@ import java.util.Optional;
 @Configuration
 public class JpaAuditConfig {
 
+//     FreeBoard의  @CreatedBy @LastModifiedBy에 담을 객체이다.
     @Bean // <-객체야
     public AuditorAware<String> auditorAware(){
 
