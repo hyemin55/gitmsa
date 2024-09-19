@@ -17,7 +17,6 @@ class Ex03ApplicationTests {
 	@Test
 	void contextLoads() {
 		System.out.println("실행");
-//		save insert 실행...
 
 		User user = User.builder()
 				.name("홍길동")
@@ -26,6 +25,7 @@ class Ex03ApplicationTests {
 				.password("1234")
 				.wdate(LocalDateTime.now())
 				.build();
+//		save는 insert를 실행한다.
 		userRepository.save(user);
 	}
 
