@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <div class="wrapper p-5 text-white text-3xl bg-violet-950">
+    <div class="wrapper p-5 text-white text-3xl bg-yellow-400">
       <nav class="flex space-x-5">
         <div>
           <RouterLink to="/">Home</RouterLink>
@@ -15,7 +15,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="group relative">
           <RouterLink to="/freeboardlist">FreeBoard</RouterLink>
 
-          <div class="hidden group-hover:block absolute bg-violet-950 p-5 rounded opacity-80 ">
+          <div class="hidden group-hover:block absolute  bg-yellow-400 p-5 rounded opacity-90 ">
             <div>
               <RouterLink to="/freeboardlist">FreeBoardList</RouterLink>
             </div>
