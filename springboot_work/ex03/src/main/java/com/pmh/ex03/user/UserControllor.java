@@ -20,7 +20,7 @@ public class UserControllor {
     }
 
     @PostMapping("insert")
-//    @RequestBody는 postmap에서 body에서 보낸다.
+//    @RequestBody는 postmap의 body에서 보낸다.
     public String insert(@RequestBody User user) {
         System.out.println("실행");
 //		save insert 실행...

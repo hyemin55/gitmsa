@@ -10,4 +10,6 @@ public class Test02Application {
 		SpringApplication.run(Test02Application.class, args);
 	}
 
+//        구동순서 = UserController -> UserService -> UserRepository
+
 }

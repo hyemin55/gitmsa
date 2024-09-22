@@ -6,12 +6,20 @@ import lombok.*;
 import java.time.LocalDateTime;
 import java.util.Date;
 
-// 테이블 조건을 적어준다.
+/* 기본 개발패턴
+entity -> 테이블 정의
+controller -> URL맵핑
+repository -> Database 연결(insert, select)
+RequsetDto -> 유효성 검사
+service -> 기능을 묶는다.
+ */
+
+// DB 테이블의 컬럼조건을 적어준다.
 
 @Getter
 @Setter
 @ToString
-@Entity
+@Entity //DB와 1:1 매핑관계에 해당되고 JPA의 속성때문에 개발패턴을 User와 UserReqDto로 따로 만들어준다.
 @Builder
 @Table(name = "users")
 @NoArgsConstructor

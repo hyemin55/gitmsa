@@ -21,6 +21,7 @@ public class UserReqDto {
 
     @NotEmpty
     private String password;
+
     private LocalDateTime wdate;
 
 }
