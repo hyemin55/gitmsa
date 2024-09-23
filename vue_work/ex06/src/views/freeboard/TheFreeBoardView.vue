@@ -9,7 +9,7 @@
         <hr class="my-3" />
         <h1>글내용</h1>
         <p class="h-64">{{ content }}</p>
-        <h1>작성일자{{ regdate }}</h1>
+        <h1>작성일자!{{ regdate }}</h1>
         <h1>작성자{{ creAuthor }}</h1>
       </div>
       <div class="flex justify-between mt-5">
