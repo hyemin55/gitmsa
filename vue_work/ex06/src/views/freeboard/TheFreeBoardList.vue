@@ -65,7 +65,7 @@ const getFreeBoard = (pageNum) => {
   if(pageNum==undefined) pageNum=0;
   // axios -> 페이지 호출되자마자 자동실행된다.
   axios
-    .get(`http://localhost:8080/freeboard?pageNum=${pageNum}`)
+    .get(`http://localhost:10000/freeboard?pageNum=${pageNum}`)
     .then((res) => {
       arr.value = res.data.list
       totalPages.value = res.data.totalPages
