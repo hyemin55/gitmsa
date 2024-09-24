@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="h1-red">FreeBoardInput</h1>
+    <h1 class="h1-red">FreeBoardUpdate</h1>
     <div class="p-5">
       <!-- title:html   {{ title }}:변수명 -->
       title = {{ title }} content = {{ content }}
@@ -20,7 +20,7 @@
         @click="save"
         class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300"
       >
-        저장
+        수정
       </button>
     </div>
   </div>
@@ -33,36 +33,40 @@ import { useRouter, useRoute } from 'vue-router'
 
 const title = ref('')
 const content = ref('')
-// const regdate = ref('')
-// const creAuthor = ref('')
-// const idx = ref(0)
-
+const regdate = ref('')
+const creAuthor = ref('')
+const idx = ref(0)
 const router = useRouter()
-// const route = useRoute();
+const route = useRoute();
 
-// const getFreeBoard = () => {
-//   axios
-//     .get(`http://localhost:8080/freeboard/view/${route.params.idx}`)
-//     .then((res) => {
-//       title.value = res.data.title
-//       content.value = res.data.content
-//       regdate.value = res.data.regdate
-//       creAuthor.value = res.data.creAuthor
-//       idx.value = res.data.idx
-//     })
-//     .catch((e) => {
-//       console.log(e)
-//       alert(e.response.data.message)
-//       router.push({ name: 'freeboardlist' })
-//     })
-// }
+console.log(route.query);
+
+const getfreeboard = () =>{
+  axios
+    .get(`http://localhost:10000/freeboard/view/${route.query.idx}`)
+    .then((res) => {
+      title.value = res.data.title
+      content.value = res.data.content
+      regdate.value = res.data.regdate
+      creAuthor.value = res.data.creAuthor
+      idx.value = res.data.idx
+})
+.catch((e) => {
+      console.log(e)
+      alert(e.response.data.message)
+      router.push({ name: 'freeboardlist' })
+    })
+  }
+
 
 const save = () => {
   const data = {
+    // 1번 글을 수정하겠다는 설정
+    idx: route.query.idx,
     title: title.value,
     content: content.value
   }
-  // console.log(data);
+
   axios
     .post('http://localhost:10000/freeboard', data)
     .then((res) => {
@@ -73,8 +77,11 @@ const save = () => {
     .catch((e) => {
       console.log(e)
       alert('에러' + e.response.data.message)
-    })
+    });
 }
+
+getfreeboard();
+
 </script>
 
 <style scoped>

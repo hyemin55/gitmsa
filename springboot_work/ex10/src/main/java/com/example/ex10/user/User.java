@@ -4,6 +4,7 @@ package com.example.ex10.user;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDateTime;
 
@@ -47,6 +48,7 @@ public class User {
     @Column(length = 100)
     private String password;
 
+    @CreatedDate
     private LocalDateTime wdate;
 
     // JPA CLASS -> talbe CREATE가 됩니다.

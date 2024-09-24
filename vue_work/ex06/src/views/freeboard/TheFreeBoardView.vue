@@ -57,7 +57,7 @@ const doDelete = (idx) => {
 }
 
 const pageMove = () => {
-  router.push({ name: 'freeboardinput', query: { idx: idx.value } })
+  router.push({ name: 'freeboardupdate', query: { idx: idx.value } })
 }
 
 const getFreeBoard = () => {

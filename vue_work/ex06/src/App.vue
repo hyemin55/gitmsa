@@ -15,7 +15,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="group relative">
           <RouterLink to="/freeboardlist">FreeBoard</RouterLink>
 
-          <div class="hidden group-hover:block absolute  bg-yellow-400 p-5 rounded opacity-90 ">
+          <div class="hidden group-hover:block absolute bg-yellow-400 p-5 rounded opacity-90">
             <div>
               <RouterLink to="/freeboardlist">FreeBoardList</RouterLink>
             </div>
@@ -23,6 +23,9 @@ import { RouterLink, RouterView } from 'vue-router'
               <RouterLink to="/freeboardinput">FreeBoardInput</RouterLink>
             </div>
           </div>
+        </div>
+        <div>
+          <RouterLink to="/fileupload">FileUpload</RouterLink>
         </div>
       </nav>
     </div>

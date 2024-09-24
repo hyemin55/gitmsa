@@ -12,9 +12,9 @@
         </thead>
         <tbody>
           <!-- key 는 유니크한 값을 넣어줘야한다. -->
-          <tr class="hover:text-amber-500" v-for="item in arr" :key="item.idx">
+          <tr class="hover:text-amber-500 cursor-pointer" v-for="item in arr" :key="item.idx" @click="viewPage(item.idx)">
             <td class="border text-center">{{ item.idx }}</td>
-            <td class="border text-center cursor-pointer" @click="viewPage(item.idx)">
+            <td class="border text-center " >
               {{ item.title }}
             </td>
             <td class="border text-center">{{ item.creAuthor }}</td>
@@ -46,23 +46,23 @@ import axios from 'axios'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-const router = useRouter();
-const arr = ref([]);
-const totalPages = ref(10);
-const pageNum = ref(0);
+const router = useRouter()
+const arr = ref([])
+const totalPages = ref(10)
+const pageNum = ref(0)
 
 const setPageNum = (num) => {
   pageNum.value = num
-  getFreeBoard(num);
- 
+  getFreeBoard(num)
 }
 const viewPage = (idx) => {
-  const data = {name:'freeboardview', params:{idx}};
-  router.push(data);
+  console.log(idx);
+  const data = { name: 'freeboardview', params: { idx } }
+  router.push(data)
 }
 
 const getFreeBoard = (pageNum) => {
-  if(pageNum==undefined) pageNum=0;
+  if (pageNum == undefined) pageNum = 0
   // axios -> 페이지 호출되자마자 자동실행된다.
   axios
     .get(`http://localhost:10000/freeboard?pageNum=${pageNum}`)

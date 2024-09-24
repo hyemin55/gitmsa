@@ -7,6 +7,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
+import java.util.Arrays;
+
 @SpringBootApplication
 @EnableJpaAuditing
 public class Ex10Application {
@@ -21,10 +23,11 @@ public class Ex10Application {
 //                .forEach(System.out::println);
 
     }
-        @Bean
-        public ModelMapper modelMapper () {
-            return new ModelMapper();
-        }
+
+    @Bean
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
+    }
 
 }
 
