@@ -1,7 +1,11 @@
 package com.example.ex10.freeboard;
 
+import com.example.ex10.file.FileEntity;
 import com.example.ex10.user.User;
 import lombok.Data;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 public class FreeBoardResponseDto {
@@ -18,4 +22,5 @@ public class FreeBoardResponseDto {
     private String regDate;
     private String modDate;
     private int view_Count;
+    private List<FileEntity> list = new ArrayList<>();
 }

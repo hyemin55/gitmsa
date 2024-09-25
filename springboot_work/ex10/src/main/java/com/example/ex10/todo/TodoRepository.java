@@ -1,6 +1,6 @@
-package com.example.ex10.todo;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface TodoRepository extends JpaRepository<Todo, Long> {
-}
+//package com.example.ex10.todo;
+//
+//import org.springframework.data.jpa.repository.JpaRepository;
+//
+//public interface TodoRepository extends JpaRepository<Todo, Long> {
+//}

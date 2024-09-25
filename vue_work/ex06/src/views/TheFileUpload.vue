@@ -24,21 +24,23 @@ const myfile = ref(null)
 
 const save = () => {
   if (!myfile.value) {
-    alert('파일을 선택하세요');
+    alert('파일을 선택하세요')
     return
   }
-  const formData = new FormData();
-  formData.append("file",myfile.value);
-  formData.append("fileDto",{"name":"filename"});
+  const formData = new FormData()
+  formData.append('file', myfile.value)
+  formData.append('fileDto',
+      new Blob({"name":"filename"},{type:"application/json"}));
+   
 
   axios.post('http://localhost:10000/file/upload', formData, {
-    headers: {'content-Type' : 'multipart/form-data'}
-  });
+    headers: { 'content-Type': 'multipart/form-data' }
+  })
 }
 
 // (e)는 이미 설정된 이벤트 객체이다.
 const onFileChange = (e) => {
-  myfile.value = e.target.files[0];
+  myfile.value = e.target.files[0]
 }
 </script>
 <style lang="scss" scoped></style>

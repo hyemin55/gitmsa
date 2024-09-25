@@ -1,5 +1,6 @@
 package com.example.ex10.freeboard;
 
+import com.example.ex10.file.FileEntity;
 import com.example.ex10.user.User;
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,6 +11,8 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -50,24 +53,10 @@ public class FreeBoard {
 
     @Column(columnDefinition = "int default 0")
     private int view_Count;
+
+//    서로 참조해야할 때 양방향 매핑이라한다. mappedBy를 사용해 참조할 이름을 똑같이 적어줘야한다.
+//    EAGER는
+//    LAZY가 기본값이다.
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "freeBoard")
+    private List<FileEntity> list = new ArrayList<>();
 }
-//create table free_board (
-//        view_count integer not null,
-//        idx bigint not null auto_increment,
-//        mod_date datetime(6),
-//reg_date datetime(6),
-//user_idx bigint,
-//content varchar(255),
-//title varchar(255),
-//primary key (idx)
-//    ) engine=InnoDB
-//Hibernate:
-//create table users (
-//        age integer not null,
-//        idx bigint not null auto_increment,
-//        wdate datetime(6),
-//username varchar(50) not null,
-//email varchar(100),
-//password varchar(100),
-//primary key (idx)
-//    ) engine=InnoDB

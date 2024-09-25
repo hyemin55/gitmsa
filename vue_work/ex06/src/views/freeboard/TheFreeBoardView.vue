@@ -9,8 +9,12 @@
         <hr class="my-3" />
         <h1>글내용</h1>
         <p class="h-64">{{ content }}</p>
-        <h1>작성일자{{ regdate }}</h1>
-        <h1>작성자{{ creAuthor }}</h1>
+        <h1>작성일자  {{ regdate }}</h1>
+        <h1>작성자  {{ creAuthor }}</h1>
+      </div>
+      <div v-for="item in list" :key="item">
+        <img :src="`http://localhost:10000/file/download/${item.name}`" width="400" alt="">
+        {{ item.name }}
       </div>
       <div class="flex justify-between mt-5">
         <button
@@ -41,6 +45,7 @@ const title = ref('초기값')
 const content = ref('초기값')
 const regdate = ref('초기값')
 const creAuthor = ref('초기값')
+const list = ref([])
 const idx = ref(0)
 
 const doDelete = (idx) => {
@@ -53,7 +58,7 @@ const doDelete = (idx) => {
         router.push({ name: 'freeboardlist' })
       }
     })
-    .catch(e => console.log(e));
+    .catch((e) => console.log(e))
 }
 
 const pageMove = () => {
@@ -69,6 +74,8 @@ const getFreeBoard = () => {
       regdate.value = res.data.regdate
       creAuthor.value = res.data.creAuthor
       idx.value = res.data.idx
+      list.value = res.data.list
+      console.log(res.data.list)
     })
     .catch((e) => {
       console.log(e)
