@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
@@ -29,7 +30,7 @@ import java.time.LocalDateTime;
 @ToString
 @Getter
 @Setter
-
+@EntityListeners(AuditingEntityListener.class)
 // 이곳은 DBTable 정의, 속성에대해 적어준다.
 public class User {
 
