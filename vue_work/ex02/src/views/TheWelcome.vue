@@ -1,19 +1,15 @@
 <template>
-  <div style="background-color: red;">
+  <div style="background-color: red">
     <h1>TheWelcome</h1>
   </div>
 </template>
 
 <script>
 export default {
-  setup () {
-    
-
+  setup() {
     return {}
   }
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

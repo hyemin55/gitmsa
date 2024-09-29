@@ -9,24 +9,20 @@
 </template>
 
 <script>
-import TheCounter from './views/TheCounter.vue';
-import TheNav from './views/TheNav.vue';
-import { RouterView } from 'vue-router';
+import TheCounter from './views/TheCounter.vue'
+import TheNav from './views/TheNav.vue'
+import { RouterView } from 'vue-router'
 
 export default {
-  components:{
+  components: {
     TheCounter,
     RouterView,
     TheNav
   },
-  setup () {
-    
-
-    return {TheCounter, RouterView, TheNav}
+  setup() {
+    return { TheCounter, RouterView, TheNav }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

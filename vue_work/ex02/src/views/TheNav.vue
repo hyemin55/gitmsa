@@ -10,14 +10,10 @@
 
 <script>
 export default {
-  setup () {
-    
-
+  setup() {
     return {}
   }
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

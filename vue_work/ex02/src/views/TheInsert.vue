@@ -18,12 +18,11 @@ export default {
 
     const userSend = () => {
       fetch('http://localhost:8080/user/insert', {
-        method: "POST",
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(mydata)
-      })
-      .then(res => {
-        console.log(res);
+      }).then((res) => {
+        console.log(res)
       })
     }
 
